@@ -1,0 +1,18 @@
+{
+  "component": "Bakery Masterclass Ticker",
+  "generatedName": "daring-leaf-9070",
+  "files": [
+    {
+      "path": "BakeryMarqueeTicker.tsx",
+      "name": "BakeryMarqueeTicker.tsx",
+      "content": "import * as React from 'react';\n\n/**\n * BakeryMarqueeTicker Component\n * \n * A full-width horizontally scrolling marquee ticker section.\n * Features a deep royal blue background with white uppercase text.\n * Designed for an editorial, high-end bakery masterclass landing page.\n */\n\nconst TICKER_ITEMS = ['ARTISAN BREAD TECHNIQUES', 'WORLD-CLASS INSTRUCTORS', 'LIMITED COHORT SEATS', 'HANDS-ON TRAINING', 'CERTIFICATION INCLUDED', 'SOURDOUGH MASTERY', 'ENROLL NOW'];\nexport const BakeryMarqueeTicker: React.FC = () => {\n  // We repeat the items multiple times to ensure the marquee fills the screen and loops seamlessly\n  // For a 30s loop as requested, we need a significant amount of content or a fast enough speed.\n  // CSS animation will handle the translation.\n\n  const repeatedItems = [...TICKER_ITEMS, ...TICKER_ITEMS, ...TICKER_ITEMS, ...TICKER_ITEMS];\n  return <section className=\"relative w-full h-[80px] md:h-[100px] bg-[#1B2A8B] flex items-center overflow-hidden border-y border-white/10\" aria-label=\"Bakery Masterclass Highlights\">\n      <style>\n        {`\n          @keyframes scroll {\n            0% {\n              transform: translateX(0);\n            }\n            100% {\n              transform: translateX(-50%);\n            }\n          }\n          .animate-marquee {\n            display: flex;\n            white-space: nowrap;\n            animation: scroll 30s linear infinite;\n            width: max-content;\n          }\n          .marquee-content {\n            display: flex;\n            align-items: center;\n          }\n        `}\n      </style>\n      \n      <div className=\"animate-marquee\">\n        {/* First set of items */}\n        <div className=\"marquee-content\">\n          {repeatedItems.map((item, index) => <span key={`set1-${index}`} className=\"flex items-center\">\n              <span className=\"text-white font-bold uppercase tracking-[0.2em] text-[13px] md:text-[15px] whitespace-nowrap\">\n                {item}\n              </span>\n              <span className=\"mx-6 md:mx-10 text-white text-[10px] opacity-80\" aria-hidden=\"true\">\n                ◆\n              </span>\n            </span>)}\n        </div>\n        \n        {/* Duplicate set for seamless looping */}\n        <div className=\"marquee-content\">\n          {repeatedItems.map((item, index) => <span key={`set2-${index}`} className=\"flex items-center\">\n              <span className=\"text-white font-bold uppercase tracking-[0.2em] text-[13px] md:text-[15px] whitespace-nowrap\">\n                {item}\n              </span>\n              <span className=\"mx-6 md:mx-10 text-white text-[10px] opacity-80\" aria-hidden=\"true\">\n                ◆\n              </span>\n            </span>)}\n        </div>\n      </div>\n    </section>;\n};"
+    }
+  ],
+  "dependencies": [
+    "class-variance-authority",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "importStatement": "import { BakeryMarqueeTicker } from '@/components/magicpath/bakery-masterclass-ticker/BakeryMarqueeTicker';",
+  "usage": "<BakeryMarqueeTicker />"
+}
