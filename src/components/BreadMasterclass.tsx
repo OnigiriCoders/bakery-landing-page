@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight, Wheat, CheckCircle2 } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Wheat } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const BLUE = '#1B3499';

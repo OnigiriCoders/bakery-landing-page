@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { Check, Shield, Award, Lock, Star, ArrowRight, ChevronDown } from 'lucide-react';
+import { Check, Shield, Award, Lock, Star, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
-
-const ROYAL_BLUE = '#1B2A8B';
 
 const TESTIMONIALS = [
   { id: 1, quote: "This masterclass completely transformed how I think about bread. Chef Elena's sourdough module alone was worth every penny.", author: "M.T.", role: "Home Baker", location: "London" },

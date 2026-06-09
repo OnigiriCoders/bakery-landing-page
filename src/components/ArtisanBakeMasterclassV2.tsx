@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { Check, Shield, Award, Lock, Star, ChevronDown, Menu, X } from 'lucide-react';
+import { Check, Shield, Lock, Star, ChevronDown, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NAV_LINKS = [{ label: 'Curriculum', href: '#curriculum' }, { label: 'Instructor', href: '#instructor' }, { label: 'Reviews', href: '#reviews' }, { label: 'Enroll', href: '#enroll' }];
@@ -17,8 +17,6 @@ const CURRICULUM = [
 ];
 const INCLUSIONS = ['3-Day Intensive Curriculum (12 modules)', 'Access to 3 World-Class Instructors', 'Lifetime access to recorded sessions', 'Downloadable recipe and technique PDFs', 'Private student community access', 'Live Q&A session recordings', 'Official Certification of Mastery', '30-Day money-back guarantee'];
 const PUBLICATIONS = ['THE NEW YORK TIMES', 'BON APPETIT', 'FOOD AND WINE', 'THE GUARDIAN', 'SAVEUR', 'EATER'];
-const TRUST_STATS = [{ value: '2,400+', label: 'STUDENTS ENROLLED', desc: 'Across 40+ countries' }, { value: '97%', label: 'COMPLETION RATE', desc: 'Industry-leading retention' }, { value: '18+', label: 'YEARS EXPERTISE', desc: 'Combined instructor experience' }, { value: '4.9', label: 'AVERAGE RATING', desc: 'From 1,200+ reviews' }];
-
 const SectionEyebrow = ({ children, className, light = false }: { children: React.ReactNode; className?: string; light?: boolean }) => (
   <span className={cn('block uppercase tracking-[0.4em] text-[11px] font-bold mb-6', light ? 'text-white/60' : 'text-[#1B2A8B]', className)}>{children}</span>
 );

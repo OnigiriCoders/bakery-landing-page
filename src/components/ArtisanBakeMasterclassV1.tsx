@@ -1,17 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
-import { Check, Shield, Award, Lock, Star, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-interface Testimonial { id: number; quote: string; author: string; role: string; location: string; }
 interface CurriculumItem { module: string; instructor: string; time: string; tag: string; }
 interface CurriculumDay { title: string; dayLabel: string; items: CurriculumItem[]; }
-
-const TESTIMONIALS: Testimonial[] = [
-  { id: 1, quote: "This masterclass completely transformed how I think about bread. Chef Elena's sourdough module alone was worth every penny.", author: "M.T.", role: "Home Baker", location: "London" },
-  { id: 2, quote: "I went from nervous beginner to running my own pop-up bakery in six months. The curriculum is genuinely world-class.", author: "R.K.", role: "Culinary Graduate", location: "New York" },
-  { id: 3, quote: "The fermentation session changed everything. I finally understand the science behind the craft.", author: "S.B.", role: "Pastry Chef", location: "Paris" },
-];
 
 const CURRICULUM: CurriculumDay[] = [
   { title: 'Foundations of Bread', dayLabel: 'DAY 01', items: [{ module: 'Sourdough Starter Science', instructor: 'Chef Elena Russo', time: '9:00–10:30 AM', tag: 'Science' }, { module: 'Flour Selection and Hydration', instructor: 'Chef Marcus Webb', time: '11:00–12:30 PM', tag: 'Technique' }, { module: 'Fermentation Fundamentals', instructor: 'Chef Elena Russo', time: '2:00–3:30 PM', tag: 'Science' }, { module: 'Shaping and Scoring', instructor: 'Chef James Allard', time: '4:00–5:00 PM', tag: 'Craft' }] },
