@@ -1,7 +1,7 @@
-import { ArtisanBakeMasterclass } from './components/ArtisanBakeMasterclass';
+import { ProjectBrowser } from './components/BakeryNavigator';
 
 function App() {
-  return <ArtisanBakeMasterclass />;
+  return <ProjectBrowser />;
 }
 
 export default App;
