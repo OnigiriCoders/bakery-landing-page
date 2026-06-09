@@ -10,11 +10,6 @@ const TESTIMONIALS = [
   { id: 2, quote: 'I went from nervous beginner to running my own pop-up bakery in six months. The curriculum is genuinely world-class.', author: 'R.K.', role: 'Culinary Graduate', location: 'New York' },
   { id: 3, quote: 'The fermentation session changed everything. I finally understand the science behind the craft.', author: 'S.B.', role: 'Pastry Chef', location: 'Paris' },
 ];
-const CURRICULUM = [
-  { title: 'DAY 01 — FOUNDATIONS OF BREAD', items: [{ module: 'Sourdough Starter Science', instructor: 'Chef Elena Russo', time: '9:00-10:30 AM' }, { module: 'Flour Selection and Hydration', instructor: 'Chef Marcus Webb', time: '11:00-12:30 PM' }, { module: 'Fermentation Fundamentals', instructor: 'Chef Elena Russo', time: '2:00-3:30 PM' }, { module: 'Shaping and Scoring', instructor: 'Chef James Allard', time: '4:00-5:00 PM' }] },
-  { title: 'DAY 02 — ADVANCED TECHNIQUES', items: [{ module: 'Enriched Doughs and Brioche', instructor: 'Chef Marcus Webb', time: '9:00-10:30 AM' }, { module: 'Laminated Pastry Foundations', instructor: 'Chef James Allard', time: '11:00-12:30 PM' }, { module: 'Oven Dynamics and Steam', instructor: 'Chef Elena Russo', time: '2:00-3:30 PM' }, { module: 'Crust Colour and Texture', instructor: 'Chef Marcus Webb', time: '4:00-5:00 PM' }] },
-  { title: 'DAY 03 — MASTERY AND REFINEMENT', items: [{ module: 'Regional Bread Traditions', instructor: 'Chef James Allard', time: '9:00-10:30 AM' }, { module: 'Menu Development', instructor: 'Chef Elena Russo', time: '11:00-12:30 PM' }, { module: 'Live Critique and Feedback', instructor: 'All Instructors', time: '2:00-4:00 PM' }, { module: 'Final Showcase and Certification', instructor: 'All Instructors', time: '4:00-5:30 PM' }] },
-];
 const INCLUSIONS = ['3-Day Intensive Curriculum (12 modules)', 'Access to 3 World-Class Instructors', 'Lifetime access to recorded sessions', 'Downloadable recipe and technique PDFs', 'Private student community access', 'Live Q&A session recordings', 'Official Certification of Mastery', '30-Day money-back guarantee'];
 const PUBLICATIONS = ['THE NEW YORK TIMES', 'BON APPETIT', 'FOOD AND WINE', 'THE GUARDIAN', 'SAVEUR', 'EATER'];
 const SectionEyebrow = ({ children, className, light = false }: { children: React.ReactNode; className?: string; light?: boolean }) => (

@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { motion } from 'framer-motion';
 
 interface Module { id: string; title: string; instructor: string; time: string; }
